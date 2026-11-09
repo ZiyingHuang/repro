@@ -1,4 +1,12 @@
-from typing import override
+try:
+    from typing import override
+except ImportError:  # Python < 3.12
+    try:
+        from typing_extensions import override
+    except ImportError:
+
+        def override(func):
+            return func
 
 import torch
 import torchvision.transforms as T
