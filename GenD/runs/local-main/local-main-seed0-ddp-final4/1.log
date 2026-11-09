@@ -1,0 +1,323 @@
+
+INFO: Files loaded
+Number of samples: 132038
+Class distribution
+Class 0 (real): 63436
+Class 1 (fake): 68602
+Total number of frames: 132038
+Total number of videos: 13374
+Dataset: test, videos: 700, frames: 22400
+Dataset: CDF, videos: 518, frames: 10360
+Dataset: DFD, videos: 3427, frames: 17135
+Dataset: DFDC, videos: 4942, frames: 24711
+Dataset: DFDCP, videos: 748, frames: 14960
+Dataset: DFR, videos: 402, frames: 8040
+Dataset: FFIW, videos: 1831, frames: 18310
+Dataset: WDF, videos: 806, frames: 16122
+LOCAL_RANK: 2 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+LOCAL_RANK: 3 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:216: Using `DistributedSampler` with the dataloaders. During `trainer.test()`, it is recommended to use `Trainer(devices=1, num_nodes=1)` to ensure each sample/batch gets evaluated exactly once. Otherwise, multi-device settings use `DistributedSampler` that replicates some samples to make sure all devices have same batch size in case of uneven inputs.
+Logs: runs/local-main/local-main-seed0-ddp-final4/
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━ 1482/2064 0:02:52 • 0:01:08 8.59it/s  The channel dimension is ambiguous. Got image shape (3, 1, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+The channel dimension is ambiguous. Got image shape (3, 1, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━ 1489/2064 0:02:53 • 0:01:07 8.59it/s  The channel dimension is ambiguous. Got image shape (3, 1, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+The channel dimension is ambiguous. Got image shape (3, 1, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+The channel dimension is ambiguous. Got image shape (3, 17, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━ 1491/2064 0:02:53 • 0:01:07 8.59it/s  The channel dimension is ambiguous. Got image shape (3, 1, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+The channel dimension is ambiguous. Got image shape (3, 1, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━ 1508/2064 0:02:55 • 0:01:05 8.59it/s  The channel dimension is ambiguous. Got image shape (3, 7, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━ 1512/2064 0:02:56 • 0:01:05 8.59it/s  The channel dimension is ambiguous. Got image shape (1, 3, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━ 1522/2064 0:02:57 • 0:01:04 8.59it/s  The channel dimension is ambiguous. Got image shape (3, 3, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━ 1532/2064 0:02:58 • 0:01:02 8.59it/s  The channel dimension is ambiguous. Got image shape (3, 7, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━ 1543/2064 0:03:00 • 0:01:01 8.58it/s  The channel dimension is ambiguous. Got image shape (1, 7, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━ 1547/2064 0:03:00 • 0:01:01 8.58it/s  The channel dimension is ambiguous. Got image shape (3, 3, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━ 1566/2064 0:03:02 • 0:00:59 8.58it/s  The channel dimension is ambiguous. Got image shape (3, 3, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━ 1573/2064 0:03:03 • 0:00:58 8.58it/s  Traceback (most recent call last):
+  File "/home/huangjunrong/deepfake/main/GenD/run_exp.py", line 170, in entry
+    main(config_exp, not test)
+  File "/home/huangjunrong/deepfake/main/GenD/run.py", line 168, in main
+    trainer.test(model, data_module)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 774, in test
+    return call._call_and_handle_interrupt(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 48, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 816, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1011, in _run
+    results = self._run_stage()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1048, in _run_stage
+    return self._evaluation_loop.run()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 138, in run
+    batch, batch_idx, dataloader_idx = next(data_fetcher)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/fetchers.py", line 134, in __next__
+    batch = super().__next__()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/fetchers.py", line 61, in __next__
+    batch = next(self.iterator)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/utilities/combined_loader.py", line 341, in __next__
+    out = next(self._iterator)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/utilities/combined_loader.py", line 142, in __next__
+    out = next(self.iterators[0])
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 741, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1518, in _next_data
+    return self._process_data(data, worker_id)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1586, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_utils.py", line 775, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 10.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/worker.py", line 358, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/huangjunrong/deepfake/main/GenD/src/dataset/dataset.py", line 217, in __getitem__
+    image = self.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/model/GenD.py", line 153, in preprocessing
+    image = self.feature_extractor.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/encoders/clip_encoder.py", line 41, in preprocess
+    return self._preprocess(images=image, return_tensors="pt")["pixel_values"][0]
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/processing_clip.py", line 109, in __call__
+    image_features = self.image_processor(images, return_tensors=return_tensors, **image_processor_kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 51, in __call__
+    return self.preprocess(images, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/image_processing_clip.py", line 337, in preprocess
+    image = self.normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 121, in normalize
+    return normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_transforms.py", line 434, in normalize
+    raise ValueError(f"mean must have {num_channels} elements if it is an iterable, got {len(mean)}")
+ValueError: mean must have 1 elements if it is an iterable, got 3
+
+ERROR: Error occurred while running experiment 'local-main-seed0':
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━ 1587/2064 0:03:05 • 0:00:56 8.58it/s  The channel dimension is ambiguous. Got image shape (3, 1, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━ 1604/2064 0:03:07 • 0:00:54 8.58it/s  Traceback (most recent call last):
+  File "/home/huangjunrong/deepfake/main/GenD/run_exp.py", line 170, in entry
+    main(config_exp, not test)
+  File "/home/huangjunrong/deepfake/main/GenD/run.py", line 168, in main
+    trainer.test(model, data_module)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 774, in test
+    return call._call_and_handle_interrupt(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 48, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 816, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1011, in _run
+    results = self._run_stage()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1048, in _run_stage
+    return self._evaluation_loop.run()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 138, in run
+    batch, batch_idx, dataloader_idx = next(data_fetcher)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/fetchers.py", line 134, in __next__
+    batch = super().__next__()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/fetchers.py", line 61, in __next__
+    batch = next(self.iterator)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/utilities/combined_loader.py", line 341, in __next__
+    out = next(self._iterator)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/utilities/combined_loader.py", line 142, in __next__
+    out = next(self.iterators[0])
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 741, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1548, in _next_data
+    return self._process_data(data, worker_id)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1586, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_utils.py", line 775, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 4.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/worker.py", line 358, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/huangjunrong/deepfake/main/GenD/src/dataset/dataset.py", line 217, in __getitem__
+    image = self.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/model/GenD.py", line 153, in preprocessing
+    image = self.feature_extractor.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/encoders/clip_encoder.py", line 41, in preprocess
+    return self._preprocess(images=image, return_tensors="pt")["pixel_values"][0]
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/processing_clip.py", line 109, in __call__
+    image_features = self.image_processor(images, return_tensors=return_tensors, **image_processor_kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 51, in __call__
+    return self.preprocess(images, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/image_processing_clip.py", line 337, in preprocess
+    image = self.normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 121, in normalize
+    return normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_transforms.py", line 434, in normalize
+    raise ValueError(f"mean must have {num_channels} elements if it is an iterable, got {len(mean)}")
+ValueError: mean must have 1 elements if it is an iterable, got 3
+
+ERROR: Error occurred while running experiment 'local-main-seed0':
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━ 1644/2064 0:03:11 • 0:00:49 8.58it/s  The channel dimension is ambiguous. Got image shape (3, 3, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+The channel dimension is ambiguous. Got image shape (3, 3, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━ 1652/2064 0:03:12 • 0:00:49 8.57it/s  The channel dimension is ambiguous. Got image shape (1, 2, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━ 1655/2064 0:03:13 • 0:00:48 8.58it/s  The channel dimension is ambiguous. Got image shape (1, 5, 3). Assuming channels are the first dimension. Use the [input_data_format](https://huggingface.co/docs/transformers/main/internal/image_processing_utils#transformers.image_transforms.rescale.input_data_format) parameter to assign the channel dimension.
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━ 1678/2064 0:03:15 • 0:00:46 8.58it/s
+Traceback (most recent call last):
+  File "/home/huangjunrong/deepfake/main/GenD/run_exp.py", line 170, in entry
+    main(config_exp, not test)
+  File "/home/huangjunrong/deepfake/main/GenD/run.py", line 168, in main
+    trainer.test(model, data_module)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 774, in test
+    return call._call_and_handle_interrupt(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 48, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 816, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1011, in _run
+    results = self._run_stage()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1048, in _run_stage
+    return self._evaluation_loop.run()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 138, in run
+    batch, batch_idx, dataloader_idx = next(data_fetcher)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/fetchers.py", line 134, in __next__
+    batch = super().__next__()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/fetchers.py", line 61, in __next__
+    batch = next(self.iterator)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/utilities/combined_loader.py", line 341, in __next__
+    out = next(self._iterator)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/utilities/combined_loader.py", line 142, in __next__
+    out = next(self.iterators[0])
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 741, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1518, in _next_data
+    return self._process_data(data, worker_id)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1586, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_utils.py", line 775, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 3.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/worker.py", line 358, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/huangjunrong/deepfake/main/GenD/src/dataset/dataset.py", line 217, in __getitem__
+    image = self.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/model/GenD.py", line 153, in preprocessing
+    image = self.feature_extractor.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/encoders/clip_encoder.py", line 41, in preprocess
+    return self._preprocess(images=image, return_tensors="pt")["pixel_values"][0]
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/processing_clip.py", line 109, in __call__
+    image_features = self.image_processor(images, return_tensors=return_tensors, **image_processor_kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 51, in __call__
+    return self.preprocess(images, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/image_processing_clip.py", line 337, in preprocess
+    image = self.normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 121, in normalize
+    return normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_transforms.py", line 434, in normalize
+    raise ValueError(f"mean must have {num_channels} elements if it is an iterable, got {len(mean)}")
+ValueError: mean must have 1 elements if it is an iterable, got 3
+
+ERROR: Error occurred while running experiment 'local-main-seed0':
+Traceback (most recent call last):
+  File "/home/huangjunrong/deepfake/main/GenD/run_exp.py", line 170, in entry
+    main(config_exp, not test)
+  File "/home/huangjunrong/deepfake/main/GenD/run.py", line 168, in main
+    trainer.test(model, data_module)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 774, in test
+    return call._call_and_handle_interrupt(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 48, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 816, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1011, in _run
+    results = self._run_stage()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1048, in _run_stage
+    return self._evaluation_loop.run()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 138, in run
+    batch, batch_idx, dataloader_idx = next(data_fetcher)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/fetchers.py", line 134, in __next__
+    batch = super().__next__()
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/loops/fetchers.py", line 61, in __next__
+    batch = next(self.iterator)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/utilities/combined_loader.py", line 341, in __next__
+    out = next(self._iterator)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/lightning/pytorch/utilities/combined_loader.py", line 142, in __next__
+    out = next(self.iterators[0])
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 741, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1548, in _next_data
+    return self._process_data(data, worker_id)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1586, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_utils.py", line 775, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 10.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/worker.py", line 358, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/huangjunrong/deepfake/main/GenD/src/dataset/dataset.py", line 217, in __getitem__
+    image = self.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/model/GenD.py", line 153, in preprocessing
+    image = self.feature_extractor.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/encoders/clip_encoder.py", line 41, in preprocess
+    return self._preprocess(images=image, return_tensors="pt")["pixel_values"][0]
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/processing_clip.py", line 109, in __call__
+    image_features = self.image_processor(images, return_tensors=return_tensors, **image_processor_kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 51, in __call__
+    return self.preprocess(images, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/image_processing_clip.py", line 337, in preprocess
+    image = self.normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 121, in normalize
+    return normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_transforms.py", line 434, in normalize
+    raise ValueError(f"mean must have {num_channels} elements if it is an iterable, got {len(mean)}")
+ValueError: mean must have 1 elements if it is an iterable, got 3
+
+ERROR: Error occurred while running experiment 'local-main-seed0':
+Caught ValueError in DataLoader worker process 10.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/worker.py", line 358, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/huangjunrong/deepfake/main/GenD/src/dataset/dataset.py", line 217, in __getitem__
+    image = self.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/model/GenD.py", line 153, in preprocessing
+    image = self.feature_extractor.preprocess(image)
+  File "/home/huangjunrong/deepfake/main/GenD/src/encoders/clip_encoder.py", line 41, in preprocess
+    return self._preprocess(images=image, return_tensors="pt")["pixel_values"][0]
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/processing_clip.py", line 109, in __call__
+    image_features = self.image_processor(images, return_tensors=return_tensors, **image_processor_kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 51, in __call__
+    return self.preprocess(images, **kwargs)
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/models/clip/image_processing_clip.py", line 337, in preprocess
+    image = self.normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_processing_utils.py", line 121, in normalize
+    return normalize(
+  File "/home/huangjunrong/deepfake/main/GenD/.venv/lib/python3.10/site-packages/transformers/image_transforms.py", line 434, in normalize
+    raise ValueError(f"mean must have {num_channels} elements if it is an iterable, got {len(mean)}")
+ValueError: mean must have 1 elements if it is an iterable, got 3
