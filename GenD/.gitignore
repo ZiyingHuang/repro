@@ -2,16 +2,13 @@ __pycache__
 
 /.venv
 /.pytest_cache
-/None
 /docs/superpowers
 
 /.vscode
 /config
 /datasets
 /outputs
-/runs
 /weights
-/logs
 /tmp
 
 x.py
@@ -39,3 +36,15 @@ z.py
 *.avi
 *.mkv
 *.webm
+
+# Keep experiment logs and result artifacts, but exclude model checkpoints
+# and TensorBoard/tracking output.
+/runs/**/checkpoints/
+/runs/tmp/
+/logs/**/checkpoints/
+*tfevents*
+**/tensorboard/
+**/lightning_logs/
+**/wandb/
+**/tmp/
+*.tmp
