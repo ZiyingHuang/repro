@@ -30,7 +30,7 @@ class DINOEncoder(nn.Module):
         self.merge_cls_token_with_patches = merge_cls_token_with_patches
 
     def preprocess(self, image: Image) -> torch.Tensor:
-        return self._preprocess(images=image, return_tensors="pt")["pixel_values"][0]
+        return self._preprocess(images=image, return_tensors="pt", input_data_format="channels_last")["pixel_values"][0]
 
     def forward(self, inputs: torch.Tensor) -> torch.Tensor:
         outputs = self.backbone(inputs)

@@ -24,6 +24,13 @@ class CLIPEncoder(nn.Module):
 
         from transformers import CLIPModel, CLIPProcessor
 
+        try:  # use the local CLIP copy on the server if available
+            from src.utils.model_paths import resolve_clip_model_path
+
+            model_name = resolve_clip_model_path(model_name)
+        except ImportError:
+            pass
+
         try:
             self._preprocess = CLIPProcessor.from_pretrained(model_name)
         except Exception:
@@ -42,7 +49,7 @@ class CLIPEncoder(nn.Module):
         self.visual_projection = clip.visual_projection
 
     def preprocess(self, image: Image) -> torch.Tensor:
-        return self._preprocess(images=image, return_tensors="pt")["pixel_values"][0]
+        return self._preprocess(images=image, return_tensors="pt", input_data_format="channels_last")["pixel_values"][0]
 
     def forward(self, preprocessed_images: torch.Tensor) -> torch.Tensor:
         return self.vision_model(preprocessed_images).pooler_output
@@ -63,7 +70,7 @@ class DINOEncoder(nn.Module):
         self.features_dim = self.backbone.config.hidden_size
 
     def preprocess(self, image: Image) -> torch.Tensor:
-        return self._preprocess(images=image, return_tensors="pt")["pixel_values"][0]
+        return self._preprocess(images=image, return_tensors="pt", input_data_format="channels_last")["pixel_values"][0]
 
     def forward(self, inputs: torch.Tensor) -> torch.Tensor:
         return self.backbone(inputs).last_hidden_state[:, 0]

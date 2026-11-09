@@ -40,7 +40,7 @@ class CLIPEncoder(nn.Module):
     def preprocess(self, image: Image) -> torch.Tensor:
         if image.mode != "RGB":
             image = image.convert("RGB")
-        return self._preprocess(images=image, return_tensors="pt")["pixel_values"][0]
+        return self._preprocess(images=image, return_tensors="pt", input_data_format="channels_last")["pixel_values"][0]
 
     def forward(self, preprocessed_images: torch.Tensor) -> torch.Tensor:
         return self.vision_model(preprocessed_images).pooler_output

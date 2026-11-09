@@ -877,3 +877,27 @@ if __name__ == "__main__":
         total_videos += len(unique_videos)
 
     print(f"Total unique videos: {total_videos}")
+
+
+def cap_frames_per_video(paths, frame_num: int = 32) -> list[str]:
+    """Same rule as dfd-hr (training/deepfake_folder_eval.py::sample_frames):
+    keep all frames if a video has <= frame_num, else take every (n // frame_num)-th frame."""
+    from collections import defaultdict
+
+    by_video = defaultdict(list)
+    for p in paths:
+        by_video[str(Path(p).parent)].append(p)
+
+    def key(p):
+        stem = Path(p).stem
+        return (0, int(stem)) if stem.isdigit() else (1, Path(p).name)
+
+    out = []
+    for video in sorted(by_video):
+        frames = sorted(by_video[video], key=key)
+        if len(frames) > frame_num:
+            step = max(1, len(frames) // frame_num)
+            frames = frames[::step][:frame_num]
+        out.extend(frames)
+    return out
+
