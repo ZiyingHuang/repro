@@ -95,6 +95,14 @@ def _use_dfdhr_test_protocol(config: Config) -> Config:
     return config
 
 
+# DF40 cross-method (Protocol-2): uniface_ff ... simswap_ff from /data/hjr/df40/test/dataset_json.
+def _use_df40_test_protocol(config: Config) -> Config:
+    from ..utils.dfbench import df40_test_files
+
+    config.tst_files = df40_test_files()
+    return config
+
+
 def _gend_checkpoint(repo_id: str) -> str:
     """Use a local download at <GEND_WEIGHTS_ROOT>/<repo_id> (default weights/yermandy/...) if present,
     otherwise the Hugging Face Hub id. The path keeps 'yermandy/' so run.py routes it to GenDHF."""
@@ -109,14 +117,15 @@ for _name, _ckpt in {
     "GenD_PE--HF-local-test": _gend_checkpoint("yermandy/GenD_PE_L"),
     "GenD_DINO--HF-local-test": _gend_checkpoint("yermandy/GenD_DINOv3_L"),
 }.items():
-    experiments[_name] = [
-        Config(
-            run_dir="runs/test",
-            checkpoint=_ckpt,
-            batch_size=128,
-            mini_batch_size=128,
-            wandb=False,
-            devices=[0],
-        ),
-        _use_dfdhr_test_protocol,
-    ]
+    for _suffix, _protocol in {"local-test": _use_dfdhr_test_protocol, "df40-test": _use_df40_test_protocol}.items():
+        experiments[_name.replace("local-test", _suffix)] = [
+            Config(
+                run_dir="runs/test",
+                checkpoint=_ckpt,
+                batch_size=128,
+                mini_batch_size=128,
+                wandb=False,
+                devices=[0],
+            ),
+            _protocol,
+        ]
